@@ -1,0 +1,32 @@
+CREATE DATABASE IF NOT EXISTS student_recommendations;
+
+USE student_recommendations;
+
+CREATE TABLE IF NOT EXISTS recommendations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_name VARCHAR(255),
+    age INT,
+    gender VARCHAR(10),
+    date_of_birth DATE,
+    email VARCHAR(255),
+    phone_number VARCHAR(20),
+    student_id VARCHAR(50),
+    courses TEXT,
+    course_duration VARCHAR(50),
+    modules_completed VARCHAR(50),
+    modules_due VARCHAR(50),
+    attendance VARCHAR(50),
+    resume_building VARCHAR(10),
+    projects_completed VARCHAR(50),
+    projects_due VARCHAR(50),
+    projects_viva VARCHAR(50),
+    research_papers_completed VARCHAR(50),
+    research_papers_due VARCHAR(50),
+    assignments_completed VARCHAR(50),
+    assignments_due VARCHAR(50),
+    quizzes_completed VARCHAR(50),
+    quizzes_due VARCHAR(50),
+    interview_preparedness VARCHAR(10),
+    interview_preparedness_due VARCHAR(50),
+    recommendations JSON
+);
